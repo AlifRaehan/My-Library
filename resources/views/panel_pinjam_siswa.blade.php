@@ -40,6 +40,15 @@
                                             Penerbit</th>
                                         <th
                                             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                            ISBN</th>
+                                        <th
+                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                            kategori</th>
+                                        <th
+                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                            Tahun Terbit</th>
+                                        <th
+                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                             Pengarang</th>
                                         <th
                                             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
@@ -66,6 +75,21 @@
                                             <td>
                                                 <div class="avatar-group">
                                                     <h6 class="mb-0 text-sm">{{ $data->penerbit }}</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <h6 class="mb-0 text-sm">{{ $data->isbn }}</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <h6 class="mb-0 text-sm">{{ $data->kategori }}</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <h6 class="mb-0 text-sm">{{ $data->tahun_terbit }}</h6>
                                                 </div>
                                             </td>
                                             <td>

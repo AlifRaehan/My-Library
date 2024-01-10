@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('judul');
             $table->string('penerbit');
+            $table->string('isbn');
+            $table->string('kategori');
+            $table->Integer('tahun_terbit');
             $table->string('pengarang');
             $table->bigInteger('stok_buku');
             $table->timestamps();

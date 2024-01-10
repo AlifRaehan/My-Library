@@ -19,6 +19,24 @@
                         @error('penerbit')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
+
+                        <label for="isbn" class="form-label"> ISBN </label>
+                        <input autocomplete="off" type="text" class="form-control @error('isbn') is-invalid @enderror" id="isbn" name="isbn" value="{{ old('isbn') }}">
+                        @error('isbn')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+
+                        <label for="kategori" class="form-label"> Kategori</label>
+                        <input autocomplete="off" type="text" class="form-control @error('kategori') is-invalid @enderror" id="kategori" name="kategori" value="{{ old('kategori') }}">
+                        @error('kategori')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+
+                        <label for="tahun_terbit" class="form-label">Tahun Terbit</label>
+                        <input autocomplete="off" type="text" class="form-control @error('tahun_terbit') is-invalid @enderror" id="tahun_terbit" name="tahun_terbit" value="{{ old('tahun_terbit') }}">
+                        @error('tahun_terbit')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
             
                         <label for="pengarang" class="form-label">Pengarang</label>
                         <input autocomplete="off" type="text" class="form-control @error('pengarang') is-invalid @enderror" id="pengarang" name="pengarang" value="{{ old('pengarang') }}">

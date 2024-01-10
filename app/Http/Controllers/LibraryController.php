@@ -92,6 +92,9 @@ class LibraryController extends Controller
         $datas = $request->validate([
             'judul' => 'required|string|max:255',
             'penerbit' => 'required|string|max:255',
+            'isbn' => 'required|string|max:255',
+            'kategori' => 'required|string|max:255',
+            'tahun_terbit' => 'required|integer',
             'pengarang' => 'required|string|max:255',
             'stok_buku' => 'required|integer',
         ]);
@@ -106,6 +109,9 @@ class LibraryController extends Controller
         $datas = $request->validate([
             'judul' => 'required|string|max:255',
             'penerbit' => 'required|string|max:255',
+            'isbn' => 'required|string|max:255',
+            'kategori' => 'required|string|max:255',
+            'tahun_terbit' => 'required|integer',
             'pengarang' => 'required|string|max:255',
             'stok_buku' => 'required|integer',
         ]);
